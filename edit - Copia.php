@@ -105,7 +105,7 @@ include_once('config.php');
         color: white;
         font-size: 15px;
         cursor: pointer;
-        border-radius: 10%;
+        border-radius: 10px;
        }
         
     #update:hover{
@@ -153,17 +153,17 @@ include_once('config.php');
                 <input type="date" name="data_nascimento" id="data_nascimento"  value="<?php echo $data_nasc; ?>" required>              
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser"  value="<?php echo $cidade; ?>" required>
+                    <input type="text" name="cidade" id="cidade" class="inputUser"  value=<?php echo $cidade; ?> required>
                     <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser"  value="<?php echo $estado; ?>" required>
+                    <input type="text" name="estado" id="estado" class="inputUser"  value=<?php echo $estado; ?> required>
                     <label for="estado" class="labelInput">Estado</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser"  value="<?php echo $endereco;?>" required>
+                    <input type="text" name="endereco" id="endereco" class="inputUser"  value=<?php echo $endereco;?> required>
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
