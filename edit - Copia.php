@@ -97,7 +97,7 @@ include_once('config.php');
             outline: none;
             font-size: 15px;
         }
-       #update{
+       #submit{
         background-image: linear-gradient(to right,rgb(0, 97, 197), rgb(90, 20, 220));
         width: 100%;
         border: none;
@@ -108,7 +108,7 @@ include_once('config.php');
         border-radius: 10px;
        }
         
-    #update:hover{
+    #submit:hover{
         background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
      }
     </style>
@@ -150,10 +150,10 @@ include_once('config.php');
                 <label for="outro">Outro</label>
                 <br><br>
                 <label for="data_nascimento">Data de Nascimento</label>
-                <input type="date" name="data_nascimento" id="data_nascimento"  value="<?php echo $data_nasc; ?>" required>              
+                <input type="date" name="data_nascimento" id="data_nascimento"  value=<?php echo $data_nasc; ?> required>              
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser"  value=<?php echo $cidade; ?> required>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" value=<?php echo $cidade; ?> required>
                     <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br><br>
