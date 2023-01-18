@@ -48,11 +48,11 @@ include_once('config.php');
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.5);
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 15px;
             border-radius: 15px;
-            width: 23%;
+            width: 20%;
         }
         fieldset{
             border: 3px solid dodgerblue;
@@ -106,8 +106,7 @@ include_once('config.php');
         font-size: 15px;
         cursor: pointer;
         border-radius: 10px;
-       }
-        
+       }   
     #submit:hover{
         background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
      }
@@ -140,17 +139,17 @@ include_once('config.php');
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <p>Sexo</p>
-                <input type="radio" id="feminino" name="sexo" value="feminino" <?php echo $sexo == 'feminino' ? 'checked' : '' ?> required>
+                <input type="radio" id="feminino" name="sexo" value="feminino" <?php echo ($sexo == 'feminino') ? 'checked' : '' ?> required>
                 <label for="feminino">Feminino</label>
                 <br>
-                <input type="radio" id="masculino" name="sexo" value="masculino" <?php echo $sexo == 'masculino' ? 'checked' : '' ?>  required>
+                <input type="radio" id="masculino" name="sexo" value="masculino" <?php echo ($sexo == 'masculino') ? 'checked' : '' ?>  required>
                 <label for="masculino">Masculino</label>
                 <br>
-                <input type="radio" id="outro" name="sexo" value="outro" <?php echo $sexo == 'outro' ? 'checked' : '' ?>  required>
+                <input type="radio" id="outro" name="sexo" value="outro" <?php echo ($sexo == 'outro') ? 'checked' : '' ?>  required>
                 <label for="outro">Outro</label>
                 <br><br>
                 <label for="data_nascimento">Data de Nascimento</label>
-                <input type="date" name="data_nascimento" id="data_nascimento"  value=<?php echo $data_nasc; ?> required>              
+                <input type="date" name="data_nascimento" id="data_nascimento" value=<?php echo $data_nasc; ?> required>              
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" value=<?php echo $cidade; ?> required>
@@ -158,12 +157,12 @@ include_once('config.php');
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser"  value=<?php echo $estado; ?> required>
+                    <input type="text" name="estado" id="estado" class="inputUser" value=<?php echo $estado; ?> required>
                     <label for="estado" class="labelInput">Estado</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser"  value=<?php echo $endereco;?> required>
+                    <input type="text" name="endereco" id="endereco" class="inputUser" value=<?php echo $endereco;?> required>
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
