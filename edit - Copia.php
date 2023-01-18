@@ -20,9 +20,6 @@ include_once('config.php');
             $estado = $user_data['estado'];
             $endereco = $user_data['endereco'];   
         } 
-        print_r($nome);
-        print_r($data_nasc); 
-        print_r($result);
    }
    else
    {
@@ -34,7 +31,6 @@ include_once('config.php');
     header('Location: sistema.php'); 
    }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +44,7 @@ include_once('config.php');
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
         }
         .box{
+            color: white;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -56,7 +53,6 @@ include_once('config.php');
             padding: 15px;
             border-radius: 15px;
             width: 23%;
-            color: white;
         }
         fieldset{
             border: 3px solid dodgerblue;
@@ -125,22 +121,22 @@ include_once('config.php');
                 <legend><b>Usuarios</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome; ?> required>
+                    <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
                     <label for="nome" class="labelInput">Nome Completo</label>
                 </div>   
                 <br><br>
                 <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" value=<?php echo $senha; ?> required>
+                    <input type="password" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
                     <label for="senha" class="labelInput">Senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="email" name="email" id="email" class="inputUser" value=<?php echo $email; ?> required>
+                    <input type="email" name="email" id="email" class="inputUser" value=<?php echo $email;?> required>
                     <label for="email" class="labelInput">Email</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" value=<?php echo $telefone; ?> required>
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" value=<?php echo $telefone;?> required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <p>Sexo</p>
@@ -167,7 +163,7 @@ include_once('config.php');
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser"  value="<?php echo $endereco; ?>" required>
+                    <input type="text" name="endereco" id="endereco" class="inputUser"  value="<?php echo $endereco;?>" required>
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
