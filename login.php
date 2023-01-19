@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Tela De Login</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -33,8 +33,7 @@
             width: 100%;
             border-radius: 10px;
             color: white;
-            font-size: 15px;
-            
+            font-size: 15px;           
         }
         .inputSubmit:hover{
             background-color: deepskyblue;
