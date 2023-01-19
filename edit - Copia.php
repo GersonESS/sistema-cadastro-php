@@ -148,7 +148,7 @@ include_once('config.php');
                 <input type="radio" id="outro" name="sexo" value="outro" <?php echo ($sexo == 'outro') ? 'checked' : '';?>  required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <label for="data_nascimento">Data de Nascimento</label>
+                <label for="data_nascimento"><b>Data de Nascimento</b></label>
                 <input type="date" name="data_nascimento" id="data_nascimento" value=<?php echo $data_nasc;?> required>              
                 <br><br>
                 <div class="inputBox">
