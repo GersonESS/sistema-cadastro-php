@@ -139,25 +139,25 @@ include_once('config.php');
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <p>Sexo</p>
-                <input type="radio" id="feminino" name="sexo" value="feminino" <?php echo ($sexo == 'feminino') ? 'checked' : '' ?> required>
+                <input type="radio" id="feminino" name="sexo" value="feminino" <?php echo ($sexo == 'feminino') ? 'checked' : ''; ?> required>
                 <label for="feminino">Feminino</label>
                 <br>
-                <input type="radio" id="masculino" name="sexo" value="masculino" <?php echo ($sexo == 'masculino') ? 'checked' : '' ?>  required>
+                <input type="radio" id="masculino" name="sexo" value="masculino" <?php echo ($sexo == 'masculino') ? 'checked' : '';?>  required>
                 <label for="masculino">Masculino</label>
                 <br>
-                <input type="radio" id="outro" name="sexo" value="outro" <?php echo ($sexo == 'outro') ? 'checked' : '' ?>  required>
+                <input type="radio" id="outro" name="sexo" value="outro" <?php echo ($sexo == 'outro') ? 'checked' : '';?>  required>
                 <label for="outro">Outro</label>
                 <br><br>
                 <label for="data_nascimento">Data de Nascimento</label>
-                <input type="date" name="data_nascimento" id="data_nascimento" value=<?php echo $data_nasc; ?> required>              
+                <input type="date" name="data_nascimento" id="data_nascimento" value=<?php echo $data_nasc;?> required>              
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" value=<?php echo $cidade; ?> required>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" value=<?php echo $cidade;?> required>
                     <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" value=<?php echo $estado; ?> required>
+                    <input type="text" name="estado" id="estado" class="inputUser" value=<?php echo $estado;?> required>
                     <label for="estado" class="labelInput">Estado</label>
                 </div>
                 <br><br>
